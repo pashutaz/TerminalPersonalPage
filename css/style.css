@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --terminal-color: #22bb22;
+}
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #241f1f;
+    color: rgb(197, 197, 197);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1 {
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+    color: var(--terminal-color);
+}
+
+h2 {
+    color: var(--terminal-color);
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--terminal-color);
+}
+
+ul {
+    list-style-type : none;
+}
+
+nav {
+    width: 50%;
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    cursor: pointer;
+    color: var(--terminal-color);
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.cursor {
+    font-weight: 900;
+    animation: blink 2s linear infinite;
+    padding-left: 10px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.wb-body {
+    background-color: #111;
+    padding: 20px;
+}
+.wb-full {
+    display: none;
+}
